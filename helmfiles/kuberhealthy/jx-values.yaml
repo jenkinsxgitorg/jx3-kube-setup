@@ -33,16 +33,20 @@ jxRequirements:
     registry: ghcr.io
   environments:
   - key: dev
+    owner: jenkinsxgitorg
+    repository: jx3-kube-setup
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: dineshpatil.net
     kind: ingress
     namespaceSubDomain: -kuberhealthy.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: dineshgitbot
   repository: bucketrepo
   secretStorage: local
   vault: {}
