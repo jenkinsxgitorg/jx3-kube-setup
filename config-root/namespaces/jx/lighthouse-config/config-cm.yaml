@@ -8,6 +8,9 @@ data:
     in_repo_config:
       enabled:
         jenkinsxgitorg/jx3-kube-setup: true
+        jenkinsxgitorg/ps-jx-java-quickstart: true
+        jenkinsxgitorg/spring-boot-app: true
+        jenkinsxgitorg/spring-boot-http-gradle: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +23,9 @@ data:
         skip-unknown-contexts: false
       merge_method:
         jenkinsxgitorg/jx3-kube-setup: merge
+        jenkinsxgitorg/ps-jx-java-quickstart: merge
+        jenkinsxgitorg/spring-boot-app: merge
+        jenkinsxgitorg/spring-boot-http-gradle: merge
       queries:
       - labels:
         - approved
@@ -31,6 +37,9 @@ data:
         - needs-rebase
         repos:
         - jenkinsxgitorg/jx3-kube-setup
+        - jenkinsxgitorg/ps-jx-java-quickstart
+        - jenkinsxgitorg/spring-boot-app
+        - jenkinsxgitorg/spring-boot-http-gradle
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +50,9 @@ data:
         - needs-rebase
         repos:
         - jenkinsxgitorg/jx3-kube-setup
+        - jenkinsxgitorg/ps-jx-java-quickstart
+        - jenkinsxgitorg/spring-boot-app
+        - jenkinsxgitorg/spring-boot-http-gradle
       target_url: http://lighthouse-jx.dineshpatil.net/merge/status
 kind: ConfigMap
 metadata:
