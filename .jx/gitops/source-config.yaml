@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: ps-jx-java-quickstart
+    - name: spring-boot-http-gradle
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
