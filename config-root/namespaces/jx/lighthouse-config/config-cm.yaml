@@ -7,6 +7,8 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        jenkinsxgitorg/golang-http-2: true
+        jenkinsxgitorg/golang-http-test: true
         jenkinsxgitorg/jx3-kube-setup: true
         jenkinsxgitorg/ps-jx-java-quickstart: true
         jenkinsxgitorg/spring-boot-app: true
@@ -22,6 +24,8 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        jenkinsxgitorg/golang-http-2: merge
+        jenkinsxgitorg/golang-http-test: merge
         jenkinsxgitorg/jx3-kube-setup: merge
         jenkinsxgitorg/ps-jx-java-quickstart: merge
         jenkinsxgitorg/spring-boot-app: merge
@@ -37,6 +41,8 @@ data:
         - needs-rebase
         repos:
         - jenkinsxgitorg/jx3-kube-setup
+        - jenkinsxgitorg/golang-http-2
+        - jenkinsxgitorg/golang-http-test
         - jenkinsxgitorg/ps-jx-java-quickstart
         - jenkinsxgitorg/spring-boot-app
         - jenkinsxgitorg/spring-boot-http-gradle
@@ -50,6 +56,8 @@ data:
         - needs-rebase
         repos:
         - jenkinsxgitorg/jx3-kube-setup
+        - jenkinsxgitorg/golang-http-2
+        - jenkinsxgitorg/golang-http-test
         - jenkinsxgitorg/ps-jx-java-quickstart
         - jenkinsxgitorg/spring-boot-app
         - jenkinsxgitorg/spring-boot-http-gradle
