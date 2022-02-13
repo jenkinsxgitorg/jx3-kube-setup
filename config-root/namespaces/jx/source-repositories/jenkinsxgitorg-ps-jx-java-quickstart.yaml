@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: jenkinsxgitorg
+    provider: github
+    repository: ps-jx-java-quickstart
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: jenkinsxgitorg-ps-jx-java-quickstart
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/jenkinsxgitorg/ps-jx-java-quickstart.git
+  org: jenkinsxgitorg
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: ps-jx-java-quickstart
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/jenkinsxgitorg/ps-jx-java-quickstart
