@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - jenkinsxgitorg/golang-http-test
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkinsxgitorg/ps-jx-java-quickstart
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -28,6 +32,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      jenkinsxgitorg/golang-http-test:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       jenkinsxgitorg/jx3-kube-setup:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -53,6 +62,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      jenkinsxgitorg/golang-http-test:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkinsxgitorg/jx3-kube-setup:
       - config-updater
       - approve
@@ -129,6 +154,9 @@ data:
     triggers:
     - repos:
       - jenkinsxgitorg/jx3-kube-setup
+      trusted_org: todo
+    - repos:
+      - jenkinsxgitorg/golang-http-test
       trusted_org: todo
     - repos:
       - jenkinsxgitorg/ps-jx-java-quickstart
