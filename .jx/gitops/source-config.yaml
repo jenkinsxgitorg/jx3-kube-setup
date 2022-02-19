@@ -11,6 +11,7 @@ spec:
     - name: aspnet-app-test
     - name: golang-http-2
     - name: golang-http-test
+    - name: jx3-golang-demo3
     - name: ps-jx-java-quickstart
     - name: spring-boot-app
     - name: spring-boot-http-gradle
