@@ -16,6 +16,12 @@ spec:
     - name: spring-boot-app
     - name: spring-boot-http-gradle
     scheduler: in-repo
+  - owner: dineshgitbot
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: golang-test-http
+    scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'
     kind: failureOrNextSuccess

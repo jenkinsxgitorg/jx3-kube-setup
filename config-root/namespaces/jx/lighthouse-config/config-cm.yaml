@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        dineshgitbot/golang-test-http: true
         jenkinsxgitorg/aspnet-app-test: true
         jenkinsxgitorg/golang-http-2: true
         jenkinsxgitorg/golang-http-test: true
@@ -26,6 +27,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        dineshgitbot/golang-test-http: merge
         jenkinsxgitorg/aspnet-app-test: merge
         jenkinsxgitorg/golang-http-2: merge
         jenkinsxgitorg/golang-http-test: merge
@@ -45,6 +47,7 @@ data:
         - needs-rebase
         repos:
         - jenkinsxgitorg/jx3-kube-setup
+        - dineshgitbot/golang-test-http
         - jenkinsxgitorg/aspnet-app-test
         - jenkinsxgitorg/golang-http-2
         - jenkinsxgitorg/golang-http-test
@@ -62,6 +65,7 @@ data:
         - needs-rebase
         repos:
         - jenkinsxgitorg/jx3-kube-setup
+        - dineshgitbot/golang-test-http
         - jenkinsxgitorg/aspnet-app-test
         - jenkinsxgitorg/golang-http-2
         - jenkinsxgitorg/golang-http-test

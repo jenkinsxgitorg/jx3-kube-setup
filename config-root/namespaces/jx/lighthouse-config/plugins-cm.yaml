@@ -8,6 +8,10 @@ data:
       require_self_approval: true
     - lgtm_acts_as_approve: true
       repos:
+      - dineshgitbot/golang-test-http
+      require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
       - jenkinsxgitorg/aspnet-app-test
       require_self_approval: true
     - lgtm_acts_as_approve: true
@@ -44,6 +48,11 @@ data:
         env/prow/plugins.yaml:
           name: plugins
     external_plugins:
+      dineshgitbot/golang-test-http:
+      - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
+        name: cd-indicators
+      - endpoint: http://lighthouse-webui-plugin.jx.svc.cluster.local/lighthouse/events
+        name: lighthouse-webui-plugin
       jenkinsxgitorg/aspnet-app-test:
       - endpoint: http://cd-indicators.jx.svc.cluster.local/lighthouse/events
         name: cd-indicators
@@ -89,6 +98,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      dineshgitbot/golang-test-http:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       jenkinsxgitorg/aspnet-app-test:
       - approve
       - assign
@@ -229,6 +254,9 @@ data:
     triggers:
     - repos:
       - jenkinsxgitorg/jx3-kube-setup
+      trusted_org: todo
+    - repos:
+      - dineshgitbot/golang-test-http
       trusted_org: todo
     - repos:
       - jenkinsxgitorg/aspnet-app-test
