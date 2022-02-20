@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: dineshgitbot
+    provider: github
+    repository: golang-test-http
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: dineshgitbot-golang-test-http
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/dineshgitbot/golang-test-http.git
+  org: dineshgitbot
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: golang-test-http
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/dineshgitbot/golang-test-http
